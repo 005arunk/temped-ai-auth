@@ -1,0 +1,10 @@
+{
+  "name": "temped-ai-auth",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Demonstration app for Cognito authentication and Claude-assisted security event explanations",
+  "type": "module",
+  "scripts": {"start": "node src/server.js", "dev": "node --watch src/server.js", "test": "node --test", "check": "node --check src/server.js && node --check src/auth/cognito.js && node --check src/ai/claude.js"},
+  "engines": {"node": ">=20"},
+  "dependencies": {"@anthropic-ai/sdk": "^0.68.0", "aws-jwt-verify": "^5.1.0", "dotenv": "^16.6.1", "express": "^5.1.0", "helmet": "^8.1.0", "express-rate-limit": "^8.1.0"}
+}
